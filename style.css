@@ -1,0 +1,53 @@
+/* Estilo Geral*/
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+/* Banner avalições*/
+
+.banner_avaliacao{
+    background-color: red;
+}
+
+/* Avaliação */
+
+.conteudo{
+    background-color: blue;
+    width: 800px;
+    height: 300px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.avaliacao{
+    display: flex;
+}
+
+.star-icon{
+    list-style-type: none;
+    border: 1px solid #fff;
+    cursor: pointer;
+    color: #ffe500;
+}
+
+.star-icon::before{
+    content: "\2606";
+}
+
+
+.star-icon.ativo ~ .star-icon::before{
+    content: "\2605";
+}
+
+.avaliacao:hover .star-icon::before{
+    content: "\2605";
+}
+
+
+
+.star-icon:hover ~ .star-icon::before{
+    content: "\2606";
+}
+

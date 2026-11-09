@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Avaliações</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h2>Menu aqui</h2>
+        </div>
+    </header>
+
+    <main>
+        <div class="banner_avaliacao">
+            <h1>Avaliações</h1>
+            <p>t is a long established fact that a reader will be distracted by the readable content of a page when looking at.</p>
+        </div>
+
+        <h2>O que dizem sobre a Infinitoser</h2>
+        <div class="conteudo">
+
+            <div class="avaliacao_1">
+                <h3>Nota</h3>
+            <div class="estrelas">*****</div>
+            <p>baseado em "" avaliações</p>
+            </div>
+
+            <div class="bloco_2">
+
+                <ul class="avaliacao">
+                    <li class="star-icon">5 estrelas</li>
+                    <li class="star-icon">5 estrelas</li>
+                    <li class="star-icon">5 estrelas</li>
+                    <li class="star-icon">5 estrelas</li>
+                    <li class="star-icon">5 estrelas</li>
+                </ul>
+                <div class="barra_de_porcentagem">
+                    barra
+                </div>
+                <ul>
+                    <li>porcentagem</li>
+                    <li>porcentagem</li>
+                    <li>porcentagem</li>
+                    <li>porcentagem</li>
+                    <li>porcentagem</li>
+                </ul>
+            </div>
+
+            <div class="avaliacao_3">
+                <!-- <img src="icone" alt="">-->
+                <p><span>Deixe sua avaliação</span> Sua opinião faz a diferença</p>
+                <button>Avaliar agora!!!</button>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        var stars = document.querySelectorAll(".star-icon");
+
+        document.addEventListener('click', function(e){
+            var classStar = e.target.classList;
+
+            if(!classStar.contains('ativo')){
+                stars.forEach(function(star){
+                    star.classList.remove('ativo')
+                });
+                classStar.add('ativo')
+            }
+            
+        })
+    </script>
+</body>
+</html>
